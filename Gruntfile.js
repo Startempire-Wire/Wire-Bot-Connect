@@ -27,6 +27,15 @@ module.exports = function( grunt ) {
 			},
 		},
 
+		watch: {
+			files: ['**/*.js'],
+			tasks: ['jshint']
+		},
+
+		jshint: {
+			all: ['Gruntfile.js', 'src/**/*.js', 'test/**/*.js']
+		},
+
 		makepot: {
 			target: {
 				options: {
@@ -43,6 +52,7 @@ module.exports = function( grunt ) {
 				}
 			}
 		},
+
 	} );
 
 	grunt.loadNpmTasks( 'grunt-wp-i18n' );
@@ -50,6 +60,8 @@ module.exports = function( grunt ) {
 	grunt.registerTask( 'default', [ 'i18n','readme' ] );
 	grunt.registerTask( 'i18n', ['wire-bot-connect', 'makepot'] );
 	grunt.registerTask( 'readme', ['wp_readme_to_markdown'] );
+	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-contrib-jshint');
 
 	grunt.util.linefeed = '\n';
 
