@@ -26,6 +26,9 @@ define('WIRE_BOT_CONNECT_URL', plugin_dir_url(__FILE__));
 // Include the main plugin class file.
 require_once WIRE_BOT_CONNECT_PATH . 'inc/class-wire-bot-connect.php';
 
-// Run the plugin.
 $wire_bot_connect = new Wire_Bot_Connect();
+register_activation_hook(__FILE__, array($wire_bot_connect, 'activate'));
+register_deactivation_hook(__FILE__, array($wire_bot_connect, 'deactivate'));
+
+// Run the plugin.
 $wire_bot_connect->run();
