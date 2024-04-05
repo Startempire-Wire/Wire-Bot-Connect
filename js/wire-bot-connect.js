@@ -3,20 +3,23 @@
 	document.addEventListener('DOMContentLoaded', function() {
         var button = document.getElementById('connect-extension-button');
 
-        if (button) { // Check if the button was found
+        if (button) {
             button.addEventListener('click', function() {
-                console.log('Button clicked On Website Now!');
+                console.log('Button clicked On Website Now! From URL: ' + window.location.origin);
 
-                // Send a message to the extension
-                window.postMessage({
-                    source: 'my-website',
-                    message: 'Button on Website Sending Message to Extension!'
-                }, window.location.origin);
+				var extensionId = 'pogcdjhlgfgkkjakdjoikjafhbgejkpg';
+
+				chrome.runtime.sendMessage(extensionId, {
+					source: 'my-website',
+					message: 'I am the Wire Bot Connect Plugin Connecting to Your Extension! & I am here to help you!',
+				  }, function(response) {
+					console.log('ON WEBSITE - Received response:', response);
+				});
+
             });
         } else {
             console.log('Button not found');
         }
     });
-
 
 })();
