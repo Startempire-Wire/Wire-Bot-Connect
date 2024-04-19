@@ -1,7 +1,7 @@
 === Wire Bot Connect ===
 Contributors: (this should be a list of wordpress.org userid's)
 Donate link: https://wirebot.chat/
-Tags: comments, spam
+Tags: social network
 Requires at least: 4.5
 Tested up to: 6.4.3
 Requires PHP: 5.6
@@ -13,7 +13,7 @@ Plugin to connect and share data between the WordPress Powered Startempire Wire 
 
 == Description ==
 
-This is the long description.  No limit, and you can use Markdown (as well as in the following sections).
+TODO: This is the long description.  No limit, and you can use Markdown (as well as in the following sections).
 
 For backwards compatibility, if this section is missing, the full length of the short description will be used, and
 Markdown parsed.
