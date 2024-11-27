@@ -9,7 +9,7 @@ module.exports = function( grunt ) {
 
 		addtextdomain: {
 			options: {
-				textdomain: 'wire-bot-connect',
+				textdomain: 'startempire-wire-network-connect',
 			},
 			update_all_domains: {
 				options: {
@@ -41,8 +41,8 @@ module.exports = function( grunt ) {
 				options: {
 					domainPath: '/languages',
 					exclude: [ '\.git/*', 'bin/*', 'node_modules/*', 'tests/*' ],
-					mainFile: 'wire-bot-connect.php',
-					potFilename: 'wire-bot-connect.pot',
+					mainFile: 'startempire-wire-network-connect.php',
+					potFilename: 'startempire-wire-network-connect.pot',
 					potHeaders: {
 						poedit: true,
 						'x-poedit-keywordslist': true
@@ -58,7 +58,7 @@ module.exports = function( grunt ) {
 	grunt.loadNpmTasks( 'grunt-wp-i18n' );
 	grunt.loadNpmTasks( 'grunt-wp-readme-to-markdown' );
 	grunt.registerTask( 'default', [ 'i18n','readme' ] );
-	grunt.registerTask( 'i18n', ['wire-bot-connect', 'makepot'] );
+	grunt.registerTask( 'i18n', ['startempire-wire-network-connect', 'makepot'] );
 	grunt.registerTask( 'readme', ['wp_readme_to_markdown'] );
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-jshint');

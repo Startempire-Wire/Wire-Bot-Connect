@@ -1,18 +1,22 @@
 <?php
 
+// Include the REST API class file.
+require_once STARTEMPIRE_WIRE_NETWORK_CONNECT_PATH . 'inc/class-startempire-wire-network-connect-rest-api.php';
+// Include the public class file.
+require_once STARTEMPIRE_WIRE_NETWORK_CONNECT_PATH . 'public/class-startempire-wire-network-connect-public.php';
 
-class Wire_Bot_Connect {
+class Startempire_Wire_Network_Connect {
     public function __construct() {
 		// Include the REST API class file.
-        require_once WIRE_BOT_CONNECT_PATH . 'inc/class-wire-bot-connect-rest-api.php';
+        require_once STARTEMPIRE_WIRE_NETWORK_CONNECT_PATH . 'inc/class-startempire-wire-network-connect-rest-api.php';
 		// Include the public class file.
-        require_once WIRE_BOT_CONNECT_PATH . 'public/class-wire-bot-connect-public.php';
+        require_once STARTEMPIRE_WIRE_NETWORK_CONNECT_PATH . 'public/class-startempire-wire-network-connect-public.php';
 
 
         // Instantiate the REST API class.
-        $this->rest_api = new Wire_Bot_Connect_Rest_Api();
+        $this->rest_api = new Startempire_Wire_Network_Connect_Rest_Api();
 		// Create a new instance of the public class.
-        $this->public = new Wire_Bot_Connect_Public();
+        $this->public = new Startempire_Wire_Network_Connect_Public();
     }
 
 	public function activate() {

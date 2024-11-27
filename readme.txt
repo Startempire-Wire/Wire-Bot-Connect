@@ -1,6 +1,6 @@
-=== Wire Bot Connect ===
+=== Startempire Wire Network Connect ===
 Contributors: (this should be a list of wordpress.org userid's)
-Donate link: https://wirebot.chat/
+Donate link: https://startempire.network/
 Tags: social network
 Requires at least: 4.5
 Tested up to: 6.4.3

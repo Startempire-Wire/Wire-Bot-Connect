@@ -11,7 +11,7 @@
 
 				chrome.runtime.sendMessage(extensionId, {
 					source: 'my-website',
-					message: 'I am the Wire Bot Connect Plugin Connecting to Your Extension! & I am here to help you!',
+					message: 'I am the Startempire Wire Network Connect Plugin Connecting to Your Extension! & I am here to help you!',
 				  }, function(response) {
 					console.log('ON WEBSITE - Received response:', response);
 				});

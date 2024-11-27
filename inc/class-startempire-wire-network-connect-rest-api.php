@@ -1,13 +1,13 @@
 <?php
-class Wire_Bot_Connect_Rest_Api {
+class Startempire_Wire_Network_Connect_Rest_Api {
 
     public function register_endpoints() {
-		register_rest_route('wire-bot/v1', '/user/(?P<id>\d+)', array(
+		register_rest_route('startempire-wire-network-connect/v1', '/user/(?P<id>\d+)', array(
 			'methods' => 'GET',
 			'callback' => array($this, 'get_user'),
 		));
 
-		register_rest_route('wire-bot/v1', '/user/(?P<id>\d+)/friends', array(
+		register_rest_route('startempire-wire-network-connect/v1', '/user/(?P<id>\d+)/friends', array(
 			'methods' => 'GET',
 			'callback' => array($this, 'get_user_friends'),
 		));
